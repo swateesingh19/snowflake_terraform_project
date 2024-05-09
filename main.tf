@@ -10,7 +10,7 @@ terraform {
     organization = "Snowflake-Terraform-POC"
 
     workspaces {
-      name = "gh-actions-demo"
+      name = "GitHub-Actions-POC"
     }
   }
 }
