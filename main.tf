@@ -23,11 +23,7 @@ resource "snowflake_database" "demo_db" {
   comment = "Database for Snowflake Terraform demo"
 }
 resource "snowflake_schema" "demo_schema" {
-  database = "DEMO_DB"
+  database = "snowflake_database.demo_db.name"
   name    = "DEMO_SCHEMA"
   comment = "Schema for Snowflake Terraform demo"
-
-  is_transient        = false
-  is_managed          = false
-  data_retention_days = 1
 }
